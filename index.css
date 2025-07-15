@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+    background-image: url('https://m.media-amazon.com/images/I/71rzlQ2XMOL.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    margin: 60px auto;
+    padding: 40px;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 5px solid #4CAF50;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 22px;
+    color: #A7FF3B;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+.highlight {
+    color: #FFD700;
+}
+
+.intro {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #f1f1f1;
+}
+
+.navigation h2 {
+    margin-top: 30px;
+    color: #FFDD57;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: nowrap; /* força todos na mesma linha */
+}
+
+.navigation li {
+    margin: 0;
+}
+
+.navigation a {
+    font-size: 14px;        /* aumentou o tamanho da fonte */
+    padding: 10px 18px;     /* aumentou o tamanho dos botões */
+    background-color: #2E7D32;
+    border: 2px solid #1B5E20;
+    border-radius: 10px;    /* cantos um pouco mais arredondados */
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.navigation a:hover {
+    background-color: #388E3C;
+    color: #FFD700;
+    transform: scale(1.1);
+}
+.navigation a:hover {
+    background-color: #388E3C;
+    color: #FFD700;
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+}
